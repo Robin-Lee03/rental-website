@@ -100,4 +100,9 @@ main {
       z-index: -1;
     }
   }
+  section.second {
+    section.sign {
+      display: flex;
+    }
+  }
 }
