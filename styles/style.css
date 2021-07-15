@@ -24,6 +24,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  -webkit-box-shadow: 3px 3px 5px 1px #a7a7a7;
+          box-shadow: 3px 3px 5px 1px #a7a7a7;
 }
 
 header div.logo {
@@ -96,7 +103,7 @@ main section.backimg h3 {
 }
 
 main section.backimg button.start {
-  background-color: #12d9d9;
+  background-color: #2c9292;
   padding: 0.75rem 1rem;
   font-size: 1.5rem;
   color: white;
@@ -104,6 +111,11 @@ main section.backimg button.start {
   border-radius: 1rem;
   cursor: pointer;
   margin: 1rem;
+}
+
+main section.backimg button.start a {
+  text-decoration: none;
+  color: white;
 }
 
 main section.backimg div.filter {

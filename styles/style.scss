@@ -18,6 +18,12 @@ header {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  position: sticky;
+  // 讓導覽列一直維持在網頁的上方
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  box-shadow: 3px 3px 5px 1px rgb(167, 167, 167);
 
   div.logo {
     display: flex;
@@ -70,7 +76,7 @@ main {
     }
 
     button.start {
-      background-color: #12d9d9;
+      background-color: #2c9292;
       padding: 0.75rem 1rem;
       font-size: 1.5rem;
       color: white;
@@ -78,6 +84,10 @@ main {
       border-radius: 1rem;
       cursor: pointer;
       margin: 1rem;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
 
     div.filter {
